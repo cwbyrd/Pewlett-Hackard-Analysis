@@ -53,4 +53,5 @@ ON e.emp_no = de.emp_no
 LEFT JOIN titles as ti
 ON de.emp_no = ti.emp_no
 WHERE (e.birth_date between '1965-01-01' AND '1965-12-31')
+AND (de.to_date = '9999-01-01'
 ORDER BY e.emp_no
