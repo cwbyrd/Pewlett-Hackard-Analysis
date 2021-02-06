@@ -52,5 +52,5 @@ LEFT JOIN dept_emp as de
 ON e.emp_no = de.emp_no
 LEFT JOIN titles as ti
 ON de.emp_no = ti.emp_no
-WHERE (de.to_date between '1985-01-01' AND '1985-12-31')
+WHERE (e.birth_date between '1965-01-01' AND '1965-12-31')
 ORDER BY e.emp_no
