@@ -1,9 +1,10 @@
 # Pewlett-Hackard-Analysis
 ## Purpose: The purpose of this analysis is to use the tables we have already created, and obtaining the number of retiring employees by title, and to identify emopoyees who are eligible to particulate in a mentorship program. 
 ### Deliverable 1 - Number of retiring employees by title: 
-#### This step obtains retirement titles for employees born between Jan 1, 1952 and December 31, 1955. The table brought back all of the titles, so we also had to determine unique employees by their latest position. Finally, we establish a count by title of those individuals retiring. 
+#### This step obtains retirement titles for employees born between Jan 1, 1952 and December 31, 1955. The table brought back all of the titles, so we also had to determine unique employees by their latest position. Finally, we establish a count by title of those individuals retiring. Select the folder below and select retirement_titles_distinct to get the final outcome of employees whom will be retiring soon. 
 
-### Deliverable 2 - Employees eligible for the Mentorship Program: This step involved creating a mentorship-eligibility table. This involved obtaining employees from the employee table who were born during 1965.  
+
+### Deliverable 2 - Employees eligible for the Mentorship Program: This step involved creating a mentorship-eligibility table. This involved obtaining employees from the employee table who were born during 1965. Select the link below and select the file called mentorship_eligibility to get the final list of employees eligible for mentorship. 
 
 
 ### Results
@@ -24,12 +25,7 @@
 90398	
 
 
--- Count number of mentorship eligible employees by position
-SELECT COUNT(me.title), me.title
-INTO me_count
-FROM mentorship_eligibility as me
-GROUP BY me.title
-ORDER BY COUNT(me.title) DESC
+
 
 ii. Count of mentorship eligible positions.   
 count	title
@@ -57,3 +53,18 @@ Count    	title
 2	Manager
 90398	
    
+-- Count number of mentorship eligible employees by position
+SELECT COUNT(me.title), me.title
+INTO me_count
+FROM mentorship_eligibility as me
+GROUP BY me.title
+ORDER BY COUNT(me.title) DESC
+ii. Count of mentorship eligible positions.   
+count	title
+436	Senior Staff
+411	Engineer
+288	Staff
+276	Senior Engineer
+77	Technique Leader
+61	Assistant Engineer
+1549 
