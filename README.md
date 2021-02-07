@@ -3,9 +3,12 @@
 ### Deliverable 1 - Number of retiring employees by title: 
 #### This step obtains retirement titles for employees born between Jan 1, 1952 and December 31, 1955. The table brought back all of the titles, so we also had to determine unique employees by their latest position. Finally, we establish a count by title of those individuals retiring. Select the folder below and select retirement_titles_distinct to get the final outcome of employees whom will be retiring soon. 
 
+https://github.com/cwbyrd/Pewlett-Hackard-Analysis/tree/main/Data
+
 
 ### Deliverable 2 - Employees eligible for the Mentorship Program: This step involved creating a mentorship-eligibility table. This involved obtaining employees from the employee table who were born during 1965. Select the link below and select the file called mentorship_eligibility to get the final list of employees eligible for mentorship. 
 
+https://github.com/cwbyrd/Pewlett-Hackard-Analysis/tree/main/Data
 
 ### Results
  a. The majority of retirees are Sr. Engineers and Senior Staff accounting for ~64% of all retiring. 
